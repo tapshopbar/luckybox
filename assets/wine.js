@@ -22,8 +22,8 @@
   if (!W) { document.getElementById('app').innerHTML = '<p style="padding:40px 22px">와인 정보를 찾지 못했어요. <a class="btn o sm" href="' + LB.site + '">tsb.wine</a></p>'; return; }
 
   var h = '';
-  h += '<header class="top"><div class="left"><a class="btn o sm" href="../../" onclick="wcLog(\'nav\',\'luckybox\')"><span class="arr">←</span> 럭키박스</a></div>' +
-    '<a class="logo" href="' + LB.site + '" aria-label="탭샵바 홈페이지"><img src="../../assets/wordmark.png" alt="TAP SHOP BAR"></a>' +
+  h += '<header class="top"><div class="left"><a class="btn o sm" href="/luckybox/" onclick="wcLog(\'nav\',\'luckybox\')"><span class="arr">←</span> 럭키박스</a></div>' +
+    '<a class="logo" href="' + LB.site + '" aria-label="탭샵바 홈페이지"><img src="/luckybox/assets/wordmark.png" alt="TAP SHOP BAR"></a>' +
     '<a class="btn o sm" href="' + LB.site + '">홈페이지</a></header>';
 
   h += '<section class="whero"><div class="meta"><span class="chip">' + (W.type === 'white' ? '화이트' : W.type === 'red' ? '레드' : '스파클링') + '</span><span class="chip">' + W.country + '</span>' +
@@ -70,7 +70,7 @@
     '<div class="rate" id="rate" role="group" aria-label="평가"><button type="button" data-v="1">별로예요</button><button type="button" data-v="2">괜찮아요</button><button type="button" data-v="3">또 살래요</button></div><div class="thanks" id="thanks"></div></section>';
 
   h += '<footer class="foot"><div class="slogan">wine is second americano</div><span class="site">주식회사 탭샵바 · tsb.wine</span>' +
-    '<div class="links"><a class="btn d sm" href="../../">와인 럭키박스</a><a class="btn d sm" href="' + LB.site + '">탭샵바 홈페이지</a><a class="btn d sm" href="https://tapshopbar.github.io/newwines/">새 와인 보기</a><button class="btn d sm" type="button" onclick="wcShare()">공유하기</button></div>' +
+    '<div class="links"><a class="btn d sm" href="/luckybox/">와인 럭키박스</a><a class="btn d sm" href="' + LB.site + '">탭샵바 홈페이지</a><a class="btn d sm" href="https://tapshopbar.github.io/newwines/">새 와인 보기</a><button class="btn d sm" type="button" onclick="wcShare()">공유하기</button></div>' +
     '<p class="warn">' + WARN + '</p></footer><div class="toast" id="toast" role="status"></div>';
 
   document.getElementById('app').innerHTML = h;
